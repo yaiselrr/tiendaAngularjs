@@ -1,0 +1,43 @@
+[{
+        "Id": "1",
+        "Categoria": "Librería",
+        "Producto": "Borrador Perfecto",
+        "Precio": "0.5",
+        "Imagen": "http://images.wikia.com/inciclopedia/images/5/57/Borrador.jpg"
+    },
+    {
+        "Id": "2",
+        "Categoria": "Librería",
+        "Producto": "Lápiz Carboncito",
+        "Precio": "1",
+        "Imagen": "http://images.wikia.com/inciclopedia/images/5/57/Borrador.jpg"
+    },
+    {
+        "Id": "3",
+        "Categoria": "Librería",
+        "Producto": "Regla Rectitud",
+        "Precio": "1.2",
+        "Imagen": "http://images.wikia.com/inciclopedia/images/5/57/Borrador.jpg"
+    },
+    {
+        "Id": "4",
+        "Categoria": "Baño",
+        "Producto": "Jabón Cochinin",
+        "Precio": "1.5",
+        "Imagen": "http://images.wikia.com/inciclopedia/images/5/57/Borrador.jpg"
+    },
+    {
+        "Id": "5",
+        "Categoria": "Baño",
+        "Producto": "Papel Higienico",
+        "Precio": "0.7",
+        "Imagen": "http://images.wikia.com/inciclopedia/images/5/57/Borrador.jpg"
+    },
+    {
+        "Id": "6",
+        "Categoria": "Alimentos",
+        "Producto": "Leche Gloria",
+        "Precio": "2.5",
+        "Imagen": "http://images.wikia.com/inciclopedia/images/5/57/Borrador.jpg"
+    }
+]

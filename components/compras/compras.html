@@ -1,0 +1,62 @@
+  <div class="container" ng-controller="comprasCtrl">
+    <div class="row">
+      <!-- <h3 class="text-primary"> Carrito de Compras AngularJS</h3>
+      <hr style="border-top: 1px dotted #ccc;"> -->
+      <div class="col-md-7">
+        <div class="row row-cols-1 row-cols-md-3 g-1">
+          <div class="col mb-4" ng-repeat="item in products track by $index">
+            <div class="card">
+              <img src="{{item.Imagen}}" class="card-img-top" alt="{{item.Producto}}">
+              <div class="card-body">
+                <h5 class="card-title">{{item.Producto}}</h5>
+                <p class="card-text">Categoria: {{ item.Categoria}}</p>
+                <p class="card-text">Precio: $ {{ item.Precio}}</p>
+                <div class="d-grid gap-2">
+                  <button type="button" name="" id="" class="btn btn-primary"
+                    ng-click="agregarItem(item)">Agregar al carro</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4>CARRITO</h4>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in carrito track by $index">
+                  <td>{{item.producto}}</td>
+                  <td>{{item.precio}}</td>
+                  <td>{{item.cantidad}}</td>
+                  <td><button class="btn btn-danger" ng-click="quitarItem(item)">X</button></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td align="right">Total</td>
+                  <td>${{total}}</td>
+                </tr>
+                <tr>
+                  <td><button class="btn btn-success" ng-click="efectuarCompra()">Comprar productos</button></td>
+                  <td><button class="btn btn-danger" ng-click="cancelarCompra()">Cancelar compra</button></td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,38 @@
+<div class="container" ng-controller="comprasCtrl">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4>RESUMEN DE COMPRA</h4>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Subtotal</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="resumen in resumenCarrito track by $index">
+                  <td>{{resumen.producto}}</td>
+                  <td>{{resumen.precio}}</td>
+                  <td>{{resumen.cantidad}}</td>
+                  <td>{{resumen.cantidad * resumen.precio}}</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td align="right">Total</td>
+                  <td>${{resumenTotalCompra}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
